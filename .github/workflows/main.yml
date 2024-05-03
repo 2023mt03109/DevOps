@@ -13,12 +13,12 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       
-    - name: Configure AWS credentials
-      uses: aws-actions/configure-aws-credentials@v2
-      with:
-        aws-access-key-id: AKIAR3VGWPVWKO2TVMEB
-        aws-secret-access-key: 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
-        aws-region: us-east-1
+    # - name: Configure AWS credentials
+    #   uses: aws-actions/configure-aws-credentials@v2
+    #   with:
+    #     aws-access-key-id: AKIAR3VGWPVWKO2TVMEB
+    #     aws-secret-access-key: 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
+    #     aws-region: us-east-1
       
     - name: Install AWS CLI
       run: |
