@@ -37,4 +37,4 @@ jobs:
     - name: Package Lambda function
       run: |
         zip -r function.zip . -x "*.git*"  # Package your Python code into a ZIP file, excluding git files
-        aws lambda update-function-code --function-name <YOUR_LAMBDA_FUNCTION_NAME> --zip-file fileb://function.zip
+        aws lambda update-function-code --function-name TestFunction --zip-file fileb://function.zip
